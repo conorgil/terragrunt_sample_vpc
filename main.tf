@@ -1,3 +1,11 @@
+terraform {
+  # The configuration for this backend will be filled in by Terragrunt.
+  # This backend setting should be commented out during local development
+  # and testing of this Terraform module, but must be included in all releases
+  # so that this module can interoperate with Terragrunt.
+  backend "s3" {}
+}
+
 provider "aws" {
   region = "${var.aws_region}"
 }
