@@ -1,8 +1,7 @@
 terraform {
-  # The configuration for this backend will be filled in by Terragrunt.
-  # This backend setting should be commented out during local development
-  # and testing of this Terraform module, but must be included in all releases
-  # so that this module can interoperate with Terragrunt.
+  # This partial configuration will be filled in by Terragrunt during runtime.
+  # See the docs for Terraform Backend Partial Configuration for more details:
+  # https://www.terraform.io/docs/backends/config.html#partial-configuration
   backend "s3" {}
 }
 
